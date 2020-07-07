@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(authRoutes);
 app.use(trackRoutes)
 
-var mongoUri = 'mongodb+srv://admin:passwordpassword@cluster0-lgirv.mongodb.net/<dbname>?retryWrites=true&w=majority';
+var mongoUri = 'mongodb+srv://admin:passwordpassword@cluster0-lgirv.mongodb.net/tracks-db?retryWrites=true&w=majority';
 
 mongoose.connect(mongoUri, {
     useNewUrlParser: true,
